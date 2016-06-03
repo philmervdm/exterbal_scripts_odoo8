@@ -2,6 +2,9 @@
 import xmlrpclib
 import os
 import csv
+import sys
+
+execfile('params.txt')
 
 url = 'http://%s/xmlrpc' % connect['url']
 sock_obj = xmlrpclib.ServerProxy(url+'/object')
